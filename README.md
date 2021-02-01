@@ -1,1 +1,4 @@
 # PrivacyApp
+The greatest challenge of this app was figuring out the best way to add all 9 buttons numbers 0-9. NSLayoutConstraints are configured programatically using a for loop and a little bit of math so that I did not have to hard code constraints for all 9 numbers. 
+This UI is inspired from Apple's passcode UI to unlock your iphone. Users have a certain number of attempts to log into the app before they are locked out using a UIAlertController. The default password is 1234 and a UINavigationController will transition a user to be able to add content. The lock and unlock are system icons provided by apple but their sizes are changed to create a better UI.
+Users can add photos or videos from their library using a UIImagePickerController. They may also take photos or videos if their device supports it. Their content is  displayed using a UICollectionView and UICollectionViewDelegateFlowLayout. The UICollectionViewCells are a UIImageView. 
